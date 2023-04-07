@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   # import Cypress orb by specifying an exact version x.y.z
   # or the latest version 1.x.x using "@1" syntax
-  cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@3
 executors:
   base-12:
     docker:
@@ -14,9 +14,9 @@ workflows:
       # "run" is the name of the job defined in Cypress orb
       - cypress/run:
           yarn: true
-          start: yarn setup && yarn start
+          start: yarn setup --ignore-engines && yarn start
           wait-on: 'http://localhost:3000'
-          command: npx percy exec -- cypress run --record
+          command: percy exec -- cypress run
           # no need to save this workspace - there are no jobs after this one
           no-workspace: true
           executor: base-12
