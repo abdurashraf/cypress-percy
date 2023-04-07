@@ -14,7 +14,7 @@ workflows:
       # "run" is the name of the job defined in Cypress orb
       - cypress/run:
           yarn: true
-          start: yarn setup --ignore-engines && yarn start
+          start: npm i -force && npm run start
           wait-on: 'http://localhost:3000'
           command: percy exec -- cypress run
           # no need to save this workspace - there are no jobs after this one
