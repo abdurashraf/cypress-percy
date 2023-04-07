@@ -6,7 +6,7 @@ orbs:
 executors:
   base-12:
     docker:
-      - image: 'cypress/base:12.0.0-libgbm'
+      - image: 'cypress/base:14.21.1'
 workflows:
   build:
     jobs:
