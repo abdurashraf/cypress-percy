@@ -37,10 +37,9 @@
 }
 .inventory_item_name {
   font-family: "DM Mono", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  color: #dd8500;
-  
+  color: #00dd76;
 }
 .inventory_item_desc {
   font-family: "DM Sans", sans-serif;
