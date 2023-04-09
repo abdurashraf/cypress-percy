@@ -124,10 +124,4 @@
       "prettier --write"
     ]
   }
-
-  ,
-  "engines": {
-    "node": "14.15.0"
-    
-}
 }
