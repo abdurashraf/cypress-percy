@@ -26,5 +26,5 @@ screenshots
 storybook-static
 .tmp
 .eslintcache
- cypress/videos
+cypress/videos
 .DS_Store
