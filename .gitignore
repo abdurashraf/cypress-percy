@@ -27,3 +27,4 @@ storybook-static
 .tmp
 .eslintcache
  cypress/videos
+.DS_Store
